@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="top" class="todo container-fluid">
+      <div class="input-area">
+        <h1>got a new Task?</h1>
+        <form>
+          <input
+            type="text"
+            id="item"
+            class="form-control"
+            placeholder="add new task"
+            required
+          />
+        </form>
+      </div>
+      <div class="project-link">
+        <p>click below to view tasks</p>
+        <br />
+        <a href="#view-tasks"><i class="fas fa-arrow-circle-down"></i></a>
+      </div>
+    </div>
+    <div class="projects" id="view-tasks">
+      <div class="tasks">
+        <h2>Projects</h2>
+        <ul></ul>
+        <button type="button" class="btn-sm">
+          Clear All Tasks
+        </button>
+      </div>
+      <div class="project-link">
+        <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+        <br>
+        <p>back to top</p>
+      </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
